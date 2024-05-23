@@ -1,0 +1,35 @@
+$primary_text-color: #f2f7fb;
+$secondary_text-color: #262c40;
+
+$btn_default-color: #839dd1;
+$btn_hover-color: #6a7fc1;
+$btn_active-color: #6374ae;
+$btn_disabled-color: #262c40;
+
+$primary_icon-color: #262c40;
+$secondary_icon-color: #e7f0f8;
+
+$backgroud_slider-color: #414e6e;
+$track-color: #6a7fc1;
+$thumg-color: #6374ae;
+
+$background-color: #18181b;
+$background_container-color: linear-gradient(#839dd1, #6a7fc1);
+
+@font-face {
+  font-family: Kantumruy_bold;
+  src: url(../fonts/static/KantumruyPro-Bold.ttf);
+}
+@font-face {
+  font-family: Kantumruy_regular;
+  src: url(../fonts/static/KantumruyPro-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: $primary_text-color;
+}
+::selection {
+  background: #ffffff00;
+}
