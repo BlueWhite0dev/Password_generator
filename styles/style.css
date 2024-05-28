@@ -12,7 +12,6 @@
   color: #f2f7fb;
 }
 
-<<<<<<< HEAD
 body {
   background: #18181b;
   width: 100vw;
@@ -36,38 +35,6 @@ header a {
   justify-self: end;
   height: 100%;
   grid-column: 3;
-=======
-::-moz-selection {
-  background: rgba(255, 255, 255, 0);
-}
-
-::selection {
-  background: rgba(255, 255, 255, 0);
-}
-
-body {
-  background: #18181b;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-header {
-  padding: 20px 10px 0 10px;
-  height: -moz-max-content;
-  height: max-content;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-header a {
-  height: 100%;
-}
-header a:first-child {
-  visibility: hidden;
-  scale: 0;
->>>>>>> 116380da595010f269e02a098cfdda2fa3003074
 }
 header img {
   height: 100%;
@@ -86,11 +53,8 @@ h1 {
   font-size: clamp(1.125rem, 0.2619rem + 4.0146vw, 3.875rem);
   font-family: "Kantumruy_bold";
   text-align: center;
-<<<<<<< HEAD
   text-wrap: nowrap;
   grid-column: 2;
-=======
->>>>>>> 116380da595010f269e02a098cfdda2fa3003074
 }
 
 .container {
@@ -138,7 +102,6 @@ label {
   justify-content: center;
   border-radius: 25px;
 }
-<<<<<<< HEAD
 label:hover:not(.disabled) {
   background: #6a7fc1;
 }
@@ -151,18 +114,11 @@ label:hover:not(.disabled) path {
 label:active {
   background: #6374ae;
 }
-label input[type=checkbox] {
+label input[type="checkbox"] {
   opacity: 0;
   width: 0;
   height: 0;
   position: absolute;
-=======
-label:hover {
-  background: #6a7fc1;
-}
-label input[type=checkbox] {
-  display: none;
->>>>>>> 116380da595010f269e02a098cfdda2fa3003074
 }
 label span {
   font-family: "Kantumruy_bold";
@@ -172,7 +128,6 @@ label span {
   overflow: hidden;
 }
 
-<<<<<<< HEAD
 .disabled {
   background: #262c40;
 }
@@ -183,8 +138,6 @@ label span {
   fill: #e7f0f8;
 }
 
-=======
->>>>>>> 116380da595010f269e02a098cfdda2fa3003074
 .btn_container {
   width: 40%;
   min-width: -moz-max-content;
@@ -208,7 +161,6 @@ label span {
   font-family: "Kantumruy_bold";
   font-size: 18px;
 }
-<<<<<<< HEAD
 .btn_container button:hover {
   background-color: #6a7fc1;
   color: #262c40;
@@ -224,30 +176,6 @@ label span {
 }
 .btn_container .main_btn {
   padding: 24px 20px;
-=======
-.btn_container button:not(.generate):hover {
-  background-color: #6a7fc1;
-  color: #262c40;
-}
-.btn_container button:not(.generate):hover path {
-  stroke: #262c40;
-}
-.btn_container button:not(.generate):active {
-  background-color: #6374ae;
-}
-.btn_container .generate {
-  padding: 24px 20px;
-}
-.btn_container .generate:hover {
-  background-color: #6a7fc1;
-  color: #262c40;
-}
-.btn_container .generate:hover path {
-  fill: #262c40;
-}
-.btn_container .generate:active {
-  background-color: #6374ae;
->>>>>>> 116380da595010f269e02a098cfdda2fa3003074
 }
 
 @media (max-width: 1024px) {
@@ -266,11 +194,7 @@ label span {
   .btn_container button svg {
     display: none;
   }
-<<<<<<< HEAD
   .btn_container .main_btn {
-=======
-  .btn_container .generate {
->>>>>>> 116380da595010f269e02a098cfdda2fa3003074
     padding: 23px;
   }
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
