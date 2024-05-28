@@ -3,6 +3,25 @@
 body {
   background: $background-color;
   width: 100vw;
+<<<<<<< HEAD
+  height: 100svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header {
+  padding-top: 20px;
+  width: 90%;
+  height: max-content;
+  display: grid;
+  align-items: center;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
+  a {
+    justify-self: end;
+    height: 100%;
+    grid-column: 3;
+=======
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -19,6 +38,7 @@ header {
       scale: 0;
     }
     height: 100%;
+>>>>>>> 116380da595010f269e02a098cfdda2fa3003074
   }
   img {
     height: 100%;
@@ -36,6 +56,11 @@ h1 {
   font-size: clamp(1.125rem, 0.2619rem + 4.0146vw, 3.875rem);
   font-family: "Kantumruy_bold";
   text-align: center;
+<<<<<<< HEAD
+  text-wrap: nowrap;
+  grid-column: 2;
+=======
+>>>>>>> 116380da595010f269e02a098cfdda2fa3003074
 }
 .container {
   width: calc(60% - 40px);
@@ -77,11 +102,31 @@ label {
   align-items: center;
   justify-content: center;
   border-radius: 25px;
+<<<<<<< HEAD
+  &:hover:not(.disabled) {
+    background: $btn_hover-color;
+    span {
+      color: $primary_text-color;
+    }
+    path {
+      fill: $primary_icon-color;
+    }
+  }
+  &:active {
+    background: $btn_active-color;
+  }
+  input[type="checkbox"] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+=======
   &:hover {
     background: $btn_hover-color;
   }
   input[type="checkbox"] {
     display: none;
+>>>>>>> 116380da595010f269e02a098cfdda2fa3003074
   }
   span {
     font-family: "Kantumruy_bold";
@@ -91,6 +136,18 @@ label {
     overflow: hidden;
   }
 }
+<<<<<<< HEAD
+.disabled {
+  background: $btn_disabled-color;
+  span {
+    color: $btn_active-color;
+  }
+  path {
+    fill: $secondary_icon-color;
+  }
+}
+=======
+>>>>>>> 116380da595010f269e02a098cfdda2fa3003074
 .btn_container {
   width: 40%;
   min-width: max-content;
@@ -111,13 +168,29 @@ label {
     gap: 20px;
     font-family: "Kantumruy_bold";
     font-size: 18px;
+<<<<<<< HEAD
+    &:hover {
+      background-color: $btn_hover-color;
+      color: $btn_disabled-color;
+    }
+    &:active {
+      background-color: $btn_active-color;
+    }
+    &:not(.generate):hover {
+=======
     &:not(.generate):hover {
       background-color: $btn_hover-color;
       color: $btn_disabled-color;
+>>>>>>> 116380da595010f269e02a098cfdda2fa3003074
       path {
         stroke: $btn_disabled-color;
       }
     }
+<<<<<<< HEAD
+  }
+  .generate {
+    &:hover {
+=======
     &:not(.generate):active {
       background-color: $btn_active-color;
     }
@@ -127,13 +200,20 @@ label {
     &:hover {
       background-color: $btn_hover-color;
       color: $btn_disabled-color;
+>>>>>>> 116380da595010f269e02a098cfdda2fa3003074
       path {
         fill: $btn_disabled-color;
       }
     }
+<<<<<<< HEAD
+  }
+  .main_btn {
+    padding: 24px 20px;
+=======
     &:active {
       background-color: $btn_active-color;
     }
+>>>>>>> 116380da595010f269e02a098cfdda2fa3003074
   }
 }
 @media (max-width: 1024px) {
@@ -151,7 +231,11 @@ label {
         display: none;
       }
     }
+<<<<<<< HEAD
+    .main_btn {
+=======
     .generate {
+>>>>>>> 116380da595010f269e02a098cfdda2fa3003074
       padding: 23px;
     }
   }
