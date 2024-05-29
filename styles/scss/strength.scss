@@ -1,0 +1,86 @@
+@import "variables";
+* {
+  color: $strength-primary_text-color;
+}
+
+.btn_container {
+  button {
+    background-color: $strength-btn_disabled-color;
+    &:hover {
+      background-color: $strength-btn_hover-color;
+      color: $strength-btn_disabled-color;
+    }
+    &:active {
+      background-color: $strength-btn_active-color;
+    }
+    &:not(.generate):hover {
+      path {
+        stroke: $strength-btn_disabled-color;
+      }
+    }
+  }
+  .generate {
+    &:hover {
+      path {
+        fill: $strength-btn_disabled-color;
+      }
+    }
+  }
+}
+.container {
+  width: calc(60% - 40px);
+  max-width: 800px;
+  min-width: 250px;
+  height: calc(40% - 40px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 45px;
+  input {
+    background-color: $background_text-container-color;
+    width: 100%;
+    color: $strength-secondary_text-color;
+    font-size: clamp(1.25rem, 1.056rem + 0.9025vw, 2.5rem);
+  }
+  span {
+    font-size: clamp(1.25rem, 1.0863rem + 0.7614vw, 2rem);
+    font-family: "Kantumruy_bold";
+    color: $poor_color;
+  }
+}
+.options_container {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  label {
+    cursor: pointer;
+    background: $strength-btn_default-color;
+    &:hover:not(.disabled) {
+      background: $strength-btn_hover-color;
+      span {
+        color: $strength-primary_text-color;
+      }
+      path {
+        fill: $strength-primary_icon-color;
+      }
+    }
+    &:active {
+      background: $strength-btn_active-color;
+    }
+  }
+  .disabled {
+    background: $strength-btn_disabled-color;
+    span {
+      color: $strength-secondary_text-color;
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .options_container {
+    gap: 10px;
+    width: 100%;
+  }
+}

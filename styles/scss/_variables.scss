@@ -1,0 +1,48 @@
+$background-color: #18181b;
+
+@font-face {
+  font-family: Kantumruy_bold;
+  src: url(../../fonts/static/KantumruyPro-Bold.ttf);
+}
+@font-face {
+  font-family: Kantumruy_regular;
+  src: url(../../fonts/static/KantumruyPro-Regular.ttf);
+}
+
+//! GENERATOR
+
+$generator-primary_text-color: #f2f7fb;
+$generator-secondary_text-color: #6374ae;
+
+$generator-btn_default-color: #839dd1;
+$generator-btn_hover-color: #6a7fc1;
+$generator-btn_active-color: #6374ae;
+$generator-btn_disabled-color: #262c40;
+
+$generator-primary_icon-color: #262c40;
+$generator-secondary_icon-color: #e7f0f8;
+
+$backgroud_slider-color: #414e6e;
+$track-color: #6a7fc1;
+$thumg-color: #6374ae;
+
+$background_container-color: linear-gradient(#839dd1, #6a7fc1);
+
+//!STRENGTH
+$strength-primary_text-color: #f0fdf5;
+$strength-secondary_text-color: #15803c;
+
+$strength-btn_default-color: #22c55e;
+$strength-btn_hover-color: #16a34a;
+$strength-btn_active-color: #15803c;
+$strength-btn_disabled-color: #052e14;
+
+$strength-primary_icon-color: #052e14;
+$strength-secondary_icon-color: #f0fdf5;
+
+$background_text-container-color: #f0fdf5;
+
+$poor_color: #dc2626;
+$fair_color: #ea580c;
+$good_color: #2563eb;
+$excellent_color: #16a34a;

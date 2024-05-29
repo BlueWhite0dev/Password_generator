@@ -1,0 +1,87 @@
+@font-face {
+  font-family: Kantumruy_bold;
+  src: url(../../fonts/static/KantumruyPro-Bold.ttf);
+}
+@font-face {
+  font-family: Kantumruy_regular;
+  src: url(../../fonts/static/KantumruyPro-Regular.ttf);
+}
+* {
+  color: #f0fdf5;
+}
+
+.btn_container button {
+  background-color: #052e14;
+}
+.btn_container button:hover {
+  background-color: #16a34a;
+  color: #052e14;
+}
+.btn_container button:active {
+  background-color: #15803c;
+}
+.btn_container button:not(.generate):hover path {
+  stroke: #052e14;
+}
+.btn_container .generate:hover path {
+  fill: #052e14;
+}
+
+.container {
+  width: calc(60% - 40px);
+  max-width: 800px;
+  min-width: 250px;
+  height: calc(40% - 40px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 45px;
+}
+.container input {
+  background-color: #f0fdf5;
+  width: 100%;
+  color: #15803c;
+  font-size: clamp(1.25rem, 1.056rem + 0.9025vw, 2.5rem);
+}
+.container span {
+  font-size: clamp(1.25rem, 1.0863rem + 0.7614vw, 2rem);
+  font-family: "Kantumruy_bold";
+  color: #dc2626;
+}
+
+.options_container {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.options_container label {
+  cursor: pointer;
+  background: #22c55e;
+}
+.options_container label:hover:not(.disabled) {
+  background: #16a34a;
+}
+.options_container label:hover:not(.disabled) span {
+  color: #f0fdf5;
+}
+.options_container label:hover:not(.disabled) path {
+  fill: #052e14;
+}
+.options_container label:active {
+  background: #15803c;
+}
+.options_container .disabled {
+  background: #052e14;
+}
+.options_container .disabled span {
+  color: #15803c;
+}
+
+@media (max-width: 1024px) {
+  .options_container {
+    gap: 10px;
+    width: 100%;
+  }
+}/*# sourceMappingURL=strength.css.map */

@@ -1,15 +1,14 @@
 @font-face {
   font-family: Kantumruy_bold;
-  src: url(../fonts/static/KantumruyPro-Bold.ttf);
+  src: url(../../fonts/static/KantumruyPro-Bold.ttf);
 }
 @font-face {
   font-family: Kantumruy_regular;
-  src: url(../fonts/static/KantumruyPro-Regular.ttf);
+  src: url(../../fonts/static/KantumruyPro-Regular.ttf);
 }
 * {
   margin: 0;
   padding: 0;
-  color: #f2f7fb;
 }
 
 body {
@@ -57,39 +56,8 @@ h1 {
   grid-column: 2;
 }
 
-.container {
-  width: calc(60% - 40px);
-  max-width: 800px;
-  min-width: 250px;
-  padding: 20px;
-  height: calc(40% - 40px);
-  background: linear-gradient(#839dd1, #6a7fc1);
-  border-radius: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.container span {
-  overflow-wrap: anywhere;
-  font-size: clamp(1.25rem, 1.0863rem + 0.7614vw, 2rem);
-  font-family: "Kantumruy_regular";
-}
-
-.options_container {
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: repeat(4, 1fr);
-  justify-items: center;
-  align-items: center;
-  width: 90%;
-  gap: 15px;
-  height: -moz-max-content;
-  height: max-content;
-}
-
-label {
+.options_container label {
   cursor: pointer;
-  background: #839dd1;
   width: 80%;
   max-width: 240px;
   gap: 20px;
@@ -102,40 +70,18 @@ label {
   justify-content: center;
   border-radius: 25px;
 }
-label:hover:not(.disabled) {
-  background: #6a7fc1;
-}
-label:hover:not(.disabled) span {
-  color: #f2f7fb;
-}
-label:hover:not(.disabled) path {
-  fill: #262c40;
-}
-label:active {
-  background: #6374ae;
-}
-label input[type="checkbox"] {
+.options_container label input[type=checkbox] {
   opacity: 0;
   width: 0;
   height: 0;
   position: absolute;
 }
-label span {
+.options_container label span {
   font-family: "Kantumruy_bold";
   font-size: clamp(0.875rem, 0.7386rem + 0.6345vw, 1.5rem);
   position: relative;
   display: inline-block;
   overflow: hidden;
-}
-
-.disabled {
-  background: #262c40;
-}
-.disabled span {
-  color: #6374ae;
-}
-.disabled path {
-  fill: #e7f0f8;
 }
 
 .btn_container {
@@ -153,7 +99,6 @@ label span {
   border: none;
   border-radius: 20px;
   padding: 16px 20px;
-  background-color: #262c40;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -161,29 +106,11 @@ label span {
   font-family: "Kantumruy_bold";
   font-size: 18px;
 }
-.btn_container button:hover {
-  background-color: #6a7fc1;
-  color: #262c40;
-}
-.btn_container button:active {
-  background-color: #6374ae;
-}
-.btn_container button:not(.generate):hover path {
-  stroke: #262c40;
-}
-.btn_container .generate:hover path {
-  fill: #262c40;
-}
 .btn_container .main_btn {
   padding: 24px 20px;
 }
 
 @media (max-width: 1024px) {
-  .options_container {
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(2, 1fr);
-    width: 100%;
-  }
   .btn_container {
     gap: 5px;
   }
@@ -197,4 +124,4 @@ label span {
   .btn_container .main_btn {
     padding: 23px;
   }
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

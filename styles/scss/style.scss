@@ -1,0 +1,114 @@
+@import "variables";
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: $background-color;
+  width: 100vw;
+  height: 100svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header {
+  padding-top: 20px;
+  width: 90%;
+  height: max-content;
+  display: grid;
+  align-items: center;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
+  a {
+    justify-self: end;
+    height: 100%;
+    grid-column: 3;
+  }
+  img {
+    height: 100%;
+  }
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: calc(100% - 20px);
+  width: 100%;
+}
+h1 {
+  font-size: clamp(1.125rem, 0.2619rem + 4.0146vw, 3.875rem);
+  font-family: "Kantumruy_bold";
+  text-align: center;
+  text-wrap: nowrap;
+  grid-column: 2;
+}
+.options_container {
+  label {
+    cursor: pointer;
+    width: 80%;
+    max-width: 240px;
+    gap: 20px;
+    min-width: max-content;
+    padding: 0 10px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    input[type="checkbox"] {
+      opacity: 0;
+      width: 0;
+      height: 0;
+      position: absolute;
+    }
+    span {
+      font-family: "Kantumruy_bold";
+      font-size: clamp(0.875rem, 0.7386rem + 0.6345vw, 1.5rem);
+      position: relative;
+      display: inline-block;
+      overflow: hidden;
+    }
+  }
+}
+
+.btn_container {
+  width: 40%;
+  min-width: max-content;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  button {
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    font-family: "Kantumruy_bold";
+    font-size: 18px;
+  }
+  .main_btn {
+    padding: 24px 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .btn_container {
+    gap: 5px;
+    button {
+      padding: 18px;
+      gap: 5px;
+      svg {
+        display: none;
+      }
+    }
+    .main_btn {
+      padding: 23px;
+    }
+  }
+}
