@@ -28,15 +28,15 @@
 }
 
 .container {
-  width: calc(60% - 40px);
-  max-width: 800px;
-  min-width: 250px;
-  height: calc(40% - 40px);
+  width: calc(60% - 2.5rem);
+  max-width: 50rem;
+  min-width: 15.625rem;
+  height: calc(40% - 2.5rem);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 45px;
+  gap: 2.813rem;
 }
 .container input {
   background-color: #f0fdf5;
@@ -81,7 +81,7 @@
 
 @media (max-width: 1024px) {
   .options_container {
-    gap: 10px;
+    gap: 0.625rem;
     width: 100%;
   }
 }/*# sourceMappingURL=strength.css.map */

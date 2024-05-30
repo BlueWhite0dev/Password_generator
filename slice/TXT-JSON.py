@@ -24,4 +24,4 @@ for length, passwords in passwords_dict.items():
     with open(output_file, 'w', encoding='utf-8') as json_file:
         json.dump(data, json_file, indent=4)
 
-print("Zakończono podział i zapis haseł do plików JSON!")
+print("The division and saving of entries into JSON files has been completed!")

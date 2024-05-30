@@ -11,13 +11,13 @@
 }
 
 .container {
-  width: calc(60% - 40px);
-  max-width: 800px;
-  min-width: 250px;
-  padding: 20px;
-  height: calc(40% - 40px);
+  width: calc(60% - 2.5rem);
+  max-width: 50rem;
+  min-width: 15.625rem;
+  padding: 1.25em;
+  height: calc(40% - 2.5rem);
   background: linear-gradient(#839dd1, #6a7fc1);
-  border-radius: 25px;
+  border-radius: 1.563rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -35,7 +35,7 @@
   justify-items: center;
   align-items: center;
   width: 90%;
-  gap: 15px;
+  gap: 0.938rem;
   height: -moz-max-content;
   height: max-content;
 }

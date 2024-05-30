@@ -1,0 +1,68 @@
+@import "variables";
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: $background-color;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+img {
+  width: 12.5rem;
+}
+a {
+  transition: scale 200ms ease-in-out;
+  &:hover {
+    scale: 1.2;
+  }
+}
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 1.25rem;
+  padding: 4em 2.5em;
+  font-size: 2.25em;
+}
+.generator {
+  background: $generator-btn_default-color;
+  color: $generator-primary_text-color;
+  &:hover {
+    background: $generator-btn_hover-color;
+  }
+}
+.strength {
+  background: $strength-btn_default-color;
+  color: $strength-primary_text-color;
+  &:hover {
+    background: $strength-btn_hover-color;
+  }
+}
+#highlight {
+  display: block;
+  position: absolute;
+  width: 6.25rem;
+  height: 6.25rem;
+  background: radial-gradient(circle, $cursor-color-1 0%, $cursor-color-2 80%);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  filter: blur(2rem);
+}
+@media (max-width: 1024px) {
+  main {
+    flex-direction: column;
+  }
+}
+@media (pointer: coarse) {
+  #highlight {
+    display: none;
+  }
+}

@@ -1,5 +1,3 @@
-$background-color: #18181b;
-
 @font-face {
   font-family: Kantumruy_bold;
   src: url(../../fonts/static/KantumruyPro-Bold.ttf);
@@ -8,6 +6,10 @@ $background-color: #18181b;
   font-family: Kantumruy_regular;
   src: url(../../fonts/static/KantumruyPro-Regular.ttf);
 }
+
+$background-color: #18181b;
+$cursor-color-1: rgba(255, 255, 255, 0.5);
+$cursor-color-2: rgba(255, 255, 255, 0);
 
 //! GENERATOR
 

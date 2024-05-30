@@ -21,7 +21,7 @@ body {
 }
 
 header {
-  padding-top: 20px;
+  padding-top: 1.25em;
   width: 90%;
   height: -moz-max-content;
   height: max-content;
@@ -44,7 +44,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  height: calc(100% - 20px);
+  height: calc(100% - 1.25rem);
   width: 100%;
 }
 
@@ -59,16 +59,16 @@ h1 {
 .options_container label {
   cursor: pointer;
   width: 80%;
-  max-width: 240px;
-  gap: 20px;
+  max-width: 15rem;
+  gap: 1.25rem;
   min-width: -moz-max-content;
   min-width: max-content;
-  padding: 0 10px;
-  height: 160px;
+  padding: 0 0.625em;
+  height: 10rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 25px;
+  border-radius: 1.563rem;
 }
 .options_container label input[type=checkbox] {
   opacity: 0;
@@ -88,40 +88,40 @@ h1 {
   width: 40%;
   min-width: -moz-max-content;
   min-width: max-content;
-  height: 100px;
+  height: 6.25rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
+  gap: 1.25rem;
 }
 .btn_container button {
   cursor: pointer;
   border: none;
-  border-radius: 20px;
-  padding: 16px 20px;
+  border-radius: 1.25rem;
+  padding: 1em 1.25em;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
+  gap: 1.25rem;
   font-family: "Kantumruy_bold";
-  font-size: 18px;
+  font-size: 1.125em;
 }
 .btn_container .main_btn {
-  padding: 24px 20px;
+  padding: 1.5em 1.25em;
 }
 
 @media (max-width: 1024px) {
   .btn_container {
-    gap: 5px;
+    gap: 0.313rem;
   }
   .btn_container button {
-    padding: 18px;
-    gap: 5px;
+    padding: 1.125em;
+    gap: 0.313rem;
   }
   .btn_container button svg {
     display: none;
   }
   .btn_container .main_btn {
-    padding: 23px;
+    padding: 1.438em;
   }
 }/*# sourceMappingURL=style.css.map */

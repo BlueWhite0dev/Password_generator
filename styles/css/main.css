@@ -1,0 +1,84 @@
+@font-face {
+  font-family: Kantumruy_bold;
+  src: url(../../fonts/static/KantumruyPro-Bold.ttf);
+}
+@font-face {
+  font-family: Kantumruy_regular;
+  src: url(../../fonts/static/KantumruyPro-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #18181b;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+img {
+  width: 12.5rem;
+}
+
+a {
+  transition: scale 200ms ease-in-out;
+}
+a:hover {
+  scale: 1.2;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 1.25rem;
+  padding: 4em 2.5em;
+  font-size: 2.25em;
+}
+
+.generator {
+  background: #839dd1;
+  color: #f2f7fb;
+}
+.generator:hover {
+  background: #6a7fc1;
+}
+
+.strength {
+  background: #22c55e;
+  color: #f0fdf5;
+}
+.strength:hover {
+  background: #16a34a;
+}
+
+#highlight {
+  display: block;
+  position: absolute;
+  width: 6.25rem;
+  height: 6.25rem;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 80%);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  filter: blur(2rem);
+}
+
+@media (max-width: 1024px) {
+  main {
+    flex-direction: column;
+  }
+}
+@media (pointer: coarse) {
+  #highlight {
+    display: none;
+  }
+}/*# sourceMappingURL=main.css.map */
